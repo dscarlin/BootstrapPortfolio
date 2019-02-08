@@ -39,4 +39,10 @@ footer span{
 }
 #edit-bs .reverse {
     background-color:#4aaaa5;
-    color: #ffffff;}
+    color: #ffffff;
+}
+#pic-col {
+    padding:0;
+    margin-right:10px;
+}
+
