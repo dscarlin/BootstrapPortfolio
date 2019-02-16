@@ -1,76 +1,76 @@
+</html>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>David S Carlin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </head>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/beard.png"/>
+    
+</head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="text-white navbar-brand bg-primary " href="#">David Carlin</a>
-      </div>
-  
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfoliio</a></li>
-          <li><a href="#">Contact</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  <!----------------------------------------------------------------------------->
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="page-header">
-          <h1>About Me</h1>
+    <nav class="navbar header ">
+        <div class="header-bar container ">
+            <div class="row no-gutters">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <h1 class="reverse">David Carlin</h1>
+                </div>
+                <div class="col-xs-0 col-sm-1 col-lg-6 text-center"></div>
+                    <div class="col-lg-3 col-xs-12 col-sm-5 ">
+                        <ul class="link-container ">
+                            <a href="index.html">About</a>
+                                <span class="fade">|</span>
+                            <a href="portfolio.html">Portfolio</a>
+                                <span class="fade">|</span>
+                            <a href="contact.html">Contact</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      <div class="row">
-        <div class="col-md-3 col-xs-10">
-          <img class="thumbnail" src="https://via.placeholder.com/150" alt="bio picture">
+    </nav>
+    <div class="container section">
+            <div clas="row no-gutters">
+                <div class="container ">
+                    <h2>About Me</h2>
+                    <hr>
+                    <form data-toggle="validator">
+                            Name<input  type="text"  placeholder="Thomas Smith"  pattern="[A-Z]+[A-Za-z]* [A-Z]+[A-Za-z]*" required>  
+                            Email<input type="email"  placeholder="example@email.com"  pattern="[A-Za-z0-9.]+@[A-Za-z0-9]+.[A-Za-z0-9]+" required>
+                            Message<textarea maxlength="2000"></textarea>
+                            <button  action="#" class="reverse" required>Submit</button>
+                            <script>autosize(document.querySelectorAll('textarea'));</script>
+                            </form> 
+                        </div>
+                        <script>
+                        /*David's Fix for not submitting form from enter in input field credit: some_other_guy stackoverflow*/
+                        $('body').on('keydown', 'input', function(e) {
+                            var self = $(this)
+                            , form = self.parents('form:eq(0)')
+                            , focusable
+                            , next
+                            ;
+                            if (e.keyCode == 13) {
+                                focusable = form.find('input,textarea,button').filter(':visible');
+                                next = focusable.eq(focusable.index(this)+1);
+                                if (next.length) {
+                                    next.focus();
+                                } else {
+                                    form.submit();
+                                }
+                                return false;
+                            }
+                        });
+                        </script>
+            </div>
         </div>
-        <div class="col-md-8 col-md-offset-1 ">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Sidebar</h3>
-        </div>
-        <div class="panel-body">
-          Sidebar Content
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
-  
-    
-</body>
-</html>
+        <footer>
+            <span>copyright&copy;</span>
+        </footer>
+    </body>
+    </html>
+
+   
