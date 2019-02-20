@@ -55,7 +55,6 @@ h1{
     font-size: 1.2rem;
     overflow: auto;
     margin-bottom: 10rem;
-    max-width: 95vw;
    
 /*     min-width: 400px; */
     
@@ -313,48 +312,43 @@ button:hover{
       
     }
     .info-widget .banner, .rock-paper-scissors .banner {
-    padding: 1.5em;
-    bottom: 1em;
+        padding: 1.5em;
+        bottom: 1em;
     
-}
-.wall{
-perspective: 6000px;
-}  
-.block {
+    }
+    .wall{
+        perspective: 6000px;
+    }  
+    .block {
 /*   transform:  skewY(-8deg); */
-  right: 3rem;
-transition:.3s;
+       right: 3rem;
+       transition:.3s;
 
-}
-.block.info-widget, .block.rock-paper-scissors{
-  width: 15rem
-}
+    }
+    .block.info-widget, .block.rock-paper-scissors{
+       width: 15rem
+    }
 
-.block:hover { 
-   width: 15rem;
-  right: 2rem;
-  transition: .5s
+    .block:hover { 
+       width: 15rem;
+       right: 2rem;
+       transition: .5s
 
- }
-#inner-background{
-  border-radius: 12rem 12rem 4rem  4rem
-}
-.block:hover.info-widget, .block:hover.rock-paper-scissors {
-  width: 15rem;
-  right: 2rem
-}
-/*   .block:hover > .banner{
-    font-size: 2.3vh;
-    padding: 1.2em;
-   transition: .3s;
-  }
- */
+    }
+    #inner-background{
+       border-radius: 12rem 12rem 4rem  4rem
+    }
+    .block:hover.info-widget, .block:hover.rock-paper-scissors {
+       width: 15rem;
+       right: 2rem
+    }
+
 }
 @media only screen and (max-width: 400px){
-  .block{
-    right:5rem;  
-}
-.block:hover, .block:hover.info-widget, .block:hover.rock-paper-scissors{
-  right:4.5rem;
-}
+    .block{
+       right:5rem;  
+    }
+    .block:hover, .block:hover.info-widget, .block:hover.rock-paper-scissors{
+       right:4.5rem;
+    }
 }
